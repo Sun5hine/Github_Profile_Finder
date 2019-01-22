@@ -12,12 +12,13 @@ class App extends Component {
   getUser = (e) => {
     e.preventDefault();
     const user = e.target.elements.username.value;
-    axios.get(`https://api.github.com/users/${user}`)
-    .then((res) => {
-      const repos = res.data.public_repos;
-      this.setState({repos: repos});
-
-    })
+    if (user) {
+      axios.get(`https://api.github.com/users/${user}`)
+      .then((res) => {
+        const repos = res.data.public_repos;
+        this.setState({repos: repos});
+      })
+    } else return;
   }
   render() {
     return (
