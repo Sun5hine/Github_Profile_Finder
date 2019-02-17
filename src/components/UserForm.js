@@ -5,6 +5,7 @@ const UserForm = (props) => {
     <form onSubmit={props.getUser}>
       <input className="form" type="text" name="username"/>
       <button style={{margin:"auto", display:"block" }}> Submit </button>
+    <p> </p>
     </form>
 
   );
