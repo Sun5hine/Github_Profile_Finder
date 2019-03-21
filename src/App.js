@@ -28,7 +28,7 @@ class App extends Component {
         </header>
         <UserForm getUser={this.getUser}/>
         {this.state.repos ? <p> Number of Repos: {this.state.repos} </p> :
-        <p> please enter a username ... </p>}
+        <p> please enter a username </p>}
       </div>
     );
   }
