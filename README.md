@@ -13,7 +13,7 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ![](5.jpg)
-[lets see if i come good](www.accountingperfect.co.uk)
+[lets see if i come good](http://www.accountingperfect.co.uk/)
 
 ### `npm test`
 
